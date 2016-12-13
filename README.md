@@ -1,2 +1,3 @@
-# vue-drag-drop
-a vue project for drag and drop
+
+> a component of calendar for vue
+
