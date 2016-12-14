@@ -1,6 +1,6 @@
 var path = require('path')
-var config = require('../config')
-var utils = require('./utils')
+var config = require('./../config')
+var cssLoaders = require('./css-loaders')
 var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
@@ -8,8 +8,8 @@ module.exports = {
     app: './src/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
-    publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
+    path: config.dev.assetsRoot,
+    publicPath: config.dev.assetsPublicPath,
     filename: '[name].js'
   },
   resolve: {
@@ -59,27 +59,23 @@ module.exports = {
         loader: 'vue-html'
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url',
         query: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: path.join(config.dev.assetsSubDirectory, '[name].[hash:7].[ext]')
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url',
-        query: {
-          limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+             test: /\.scss?$/,
+             loader: 'style-loader!css-loader!sass-loader'
         }
-      }
     ]
+  },
+  vue: {
+    loaders: cssLoaders()
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
-  },
-  vue: {
-    loaders: utils.cssLoaders()
   }
 }

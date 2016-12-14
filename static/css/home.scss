@@ -1,0 +1,105 @@
+// home页面样式
+.home{
+	margin-top: 61px;
+	text-align: center;
+	// padding: 20px;
+	.home-carousel{
+
+	}
+	.about{
+		// height: 220px;
+		width: 100%;
+		padding: 10px 20px;
+		background: url(http://blog.xinsay.cn/pic1.jpg);
+		.content{
+			color: #fff;
+			// padding: 10px 0;
+			// font-size: 14px;
+			.main{
+				background: #28aeea;
+				text-align: left;
+				width: 50%;
+				margin:0 auto;
+				p{
+					text-indent: 2;
+				}
+			}
+		}
+	}
+	.news{
+		border-top: 1px solid;
+		margin-top: 20px;
+		padding: 0 20px;
+		.main{
+			text-align: left;
+			width: 80%;
+			margin: 0 auto;
+			.lists{
+				.list{
+					clear: both;
+					margin-bottom: 20px;
+					border-bottom: 1px dashed;
+					padding: 10px;
+					img{
+						float: left;
+						width: 200px;
+						height: 150px;
+						margin-right: 20px;
+					}
+					.right{
+						// float: left;
+						.title{
+							font-size: 16px;
+							a{
+								color: #333;
+							}
+							a:hover{
+								text-decoration: none;
+								border-bottom: 1px dashed;
+								color: orange;
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.products{
+		clear: both;
+		border-top: 1px solid;
+		margin-top: 20px;
+		.lists{
+			width: 80%;
+			margin: 0 auto;
+			.list{
+				float: left;
+				width: 33%;
+				// height: 150px;
+			}
+		}
+	}
+	.project{
+		clear: both;
+		border-top: 1px solid;
+		margin-top: 20px;
+		.lists{
+			width: 80%;
+			margin: 0 auto;
+			.list{
+				float: left;
+				width: 33%;
+				// height: 150px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.contact{
+		clear: both;
+		width: 80%;
+		margin: 0px auto;
+		padding-bottom: 20px;
+	}
+}

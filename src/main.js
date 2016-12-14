@@ -3,41 +3,44 @@ import Router from 'vue-router';
 import {
     sync
 } from 'vuex-router-sync';
-// import store from './vuex/store';
+import store from './vuex/store';
 import App from './App.vue';
-// import filters from './filter';
-
+import filters from './filter';
+import index from './views/index.vue';
 window.Vue = Vue;
 Vue.use(Router);
 const router = new Router({
     hashbang: false,
     history: false,
-    saveScrollPosition: false
+    saveScrollPosition: true
 });
 window.router = router;
 
-// Object.keys(filters).forEach((k) => {
-//     Vue.filter(k, filters[k]);
-// });
+Object.keys(filters).forEach((k) => {
+    Vue.filter(k, filters[k]);
+});
 
 Vue.use(require('vue-resource'));
 Vue.http.options.root = '/root';
-// Vue.use(require('./ext/vue_ext.js'));
-router.afterEach(function(transition) {
-    window.scrollTo(0, 0);
-});
+Vue.use(require('./ext/vue_ext.js'));
+
 router.map({
-    // '/': {
-    //     name: 'index/home',
-    //     component(resolve) {
-    //         require(['./views/home.vue'], resolve);
-    //     }
-    // }
+    '/': {
+        name: 'index',
+        component: index
+    },
+    '/index':{
+        name:'index',
+        component:index,
+        subRoutes:{
+            
+        }
+    }
 });
 
 // router.beforeEach(function(transition) {
 //   transition.next()
 // })
-// sync(store, router);
+sync(store, router);
 router.start(App, '#app');
 

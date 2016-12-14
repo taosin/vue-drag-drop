@@ -1,0 +1,27 @@
+.menu_left{
+	height: 100%;
+	padding: 40px 0px 0 0;
+	border-right: 1px solid;
+	height: 600px;
+	margin-top: 10px;
+	.items{
+		text-align: center;
+		width: 100%;
+		.item{
+			width: 100%;
+			// text-align: le
+			line-height: 40px;
+			font-size: 16px;
+			cursor: pointer;
+
+		}
+		.item:hover{
+			background: #fefefe;
+			color: orange;
+		}
+		.current{
+			background: #fefefe;
+			color: orange;
+		}
+	}
+}

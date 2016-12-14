@@ -1,0 +1,26 @@
+.s-test{
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	ul{
+		list-style: none;
+		li{
+			float: left;
+			width: 22%;
+			height: 300px;
+			z-index: 10;
+			transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;
+			position: relative;
+			background-color: transparent;
+			border: 1px solid #DBDBDD;
+		}
+		.active{
+			z-index: 100;
+			border: 1px solid #00c1de;
+			box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+			width: 34%;
+			height: 340px;
+			margin-top: -20px;
+		}
+	}
+}

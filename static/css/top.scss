@@ -1,0 +1,25 @@
+.tops{
+	width: 100%;
+	// background-color: rgb(32, 160, 255);
+	padding: 15px 30px;
+	color: #fff;
+	.logo{
+		width: 20%;
+		img{
+			width: 40px;
+			height: 25px;
+		}
+		float: left;
+	}
+	.right{
+		float: right;
+		height: 28px;
+		width: 80%;
+		text-align: right;
+		margin-top: 2px;
+		.logout:hover{
+			color: red;
+			cursor: pointer;
+		}
+	}
+}

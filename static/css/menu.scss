@@ -1,0 +1,116 @@
+.menu{
+	position: fixed;
+	border-top: 2px solid #387cd6;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	z-index: 2;
+	padding-top: 15px;
+	-webkit-transition: transform 0.5s cubic-bezier(0.56, -0.29, 0.57, 1), opacity 0.1s;
+	-moz-transition: transform 0.5s cubic-bezier(0.56, -0.29, 0.57, 1), opacity 0.1s;
+	-o-transition: transform 0.5s cubic-bezier(0.56, -0.29, 0.57, 1), opacity 0.1s;
+	transition: transform 0.5s cubic-bezier(0.56, -0.29, 0.57, 1), opacity 0.1s;
+	-webkit-backface-visibility: hidden;
+	.div{
+		margin: 0 auto;
+		width: 90%;
+		.logo{
+			width: 40px;
+			float: left;
+			img{
+				border-radius: 50%;
+				width: 30px;
+				border: 1px solid #333;
+				transition: all .4s ease-out;
+				-moz-transition: all .4s ease-out;
+				-webkit-transition: all .4s ease-out;
+				-o-transition: all .4s ease-out;
+			}
+			img:hover{
+				transform: rotate(200deg);
+				-webkit-transform: rotate(200deg);
+			}
+		}
+		.main{
+			float: right;
+			// margin-right: 70px;
+			ul{
+				li{
+					padding:0 6px;
+					list-style: none;
+					float: left;
+					font-size: 18px;
+					a{
+						-webkit-transition: all .2s linear;
+						color: #818a91;
+						// color: #fff;
+						border-bottom:2px solid #fff;
+					}
+					a:hover,
+					a:focus{
+						text-decoration: none;
+						color: #090a0a;
+						border-bottom:2px solid #818a91;
+					}
+				}
+			}
+		}
+	}
+	.little{
+		width: 100%;
+		position: relative;
+		text-align: center;
+		.logo{
+			width: 40px;
+			float: left;
+			padding: 3px 0 0px 10px;
+			img{
+				border-radius: 50%;
+				width: 30px;
+				border: 1px solid #333;
+				transition: all .4s ease-out;
+				-moz-transition: all .4s ease-out;
+				-webkit-transition: all .4s ease-out;
+				-o-transition: all .4s ease-out;
+			}
+		}
+		.icon{
+			float: right;
+			width: 40px;
+			padding: 10px;
+			height: 100%;
+			i{
+				width: 30px;
+			}
+		}
+	}
+	.f-menus {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 9999;
+	}
+	.menus{
+		position: fixed;
+		text-align: center;
+		top: 45px;
+		width: 100%;
+		background: #eef0f4;
+		z-index: 9999;
+		.item{
+			height: 30px;
+			padding: 5px;
+			cursor: pointer;
+		}
+		.item:hover{
+			background: rgba(0, 0, 0, 0.6);
+		}
+
+	}
+}

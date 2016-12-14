@@ -1,0 +1,114 @@
+/*logon*/
+.login-top{
+    height: 100px;
+    width: 100%;
+    background-color: #3E3A39;
+}
+.loginContent{
+    text-align: center;
+}
+.loginVerify{
+    width: 50%;
+    float: right;
+}
+.loginContent-middle{
+    width: 320px;
+    height: 200px;
+}
+.login-form{
+    padding: 20px;
+    padding-bottom: 0;
+}
+.login-form-input{
+    height: 36px;
+    width: 316px;
+    border:0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    color:grey;
+    padding-left: 12px;
+}
+.login-form-input:focus{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border-bottom: 1px solid #009688;  
+}
+.login-form button{
+    width: 50px;
+    height: 50px;
+    border: #4CAF50;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    font-size-adjust: 18pt;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: -25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.16),0 2px 10px rgba(0,0,0,.12);
+    transition:All 0.4s ease-in-out;    
+    -webkit-transition:All 0.4s ease-in-out;    
+    -moz-transition:All 0.4s ease-in-out;    
+    -o-transition:All 0.4s ease-in-out;
+}
+
+.login-form button:hover{
+    transform:rotate(360deg);    
+    -webkit-transform:rotate(360deg);    
+    -moz-transform:rotate(360deg);    
+    -o-transform:rotate(360deg);    
+    -ms-transform:rotate(360deg);
+}
+.lgoin-verify{
+    height: 46px;
+    width: 155px;
+    border: #75BAC3;
+    margin-bottom: 5px;
+    color:gray;
+}
+.topinfo{
+    position: fixed;
+    top:25px;
+    right: 30px;
+    z-index: 500;
+    color: black;
+}
+.topinfo button{
+    color: #000;
+}
+.col-md-2{
+    padding-left: 0;
+}
+input,button{
+    outline: none;
+}
+/*.top-nav{
+    background-color: #2196F3;    
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}*/
+.loginbg{
+    width: 100%;
+    background-color: #009688;
+}
+.login-title h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.loginwrap{
+    max-width: 500px;
+    padding: 20px 0;
+    width: 80%;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    border-radius: 2px;
+    margin: 0 auto;
+    top: 200px;
+}

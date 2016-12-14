@@ -1,0 +1,114 @@
+.article_list{
+	padding: 20px;
+	text-align: center;
+	h3{
+		text-align: left;
+	}
+	.content{
+		width: 98%;
+		margin: 30px auto;
+
+		.table {
+			border: none;
+			th{
+				background: #eee;
+				text-align: center;
+				border: none;
+				border-bottom: 1px solid;
+			}
+			td{
+				height: 40px;
+				padding: 10px;
+			}
+			tr:hover{
+				background: #ddd;
+			}
+		}
+	}
+	.pagination{
+		width: 100%;
+	}
+	.upload{
+		width: 61px;
+		height: 36px;
+		position: relative;
+		.addImg-btn{
+			left:0;
+			float: left;
+			display: inline-block;
+			line-height: 1;
+			white-space: nowrap;
+			background: #fff;
+			border: 1px solid #c0ccda;
+			color: #1f2d3d;
+			-webkit-appearance: none;
+			text-align: center;
+			box-sizing: border-box;
+			outline: none;
+			margin: 0;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			padding: 10px 15px;
+			font-size: 14px;
+			border-radius: 4px;
+			margin-bottom: 20px;
+			position: absolute;
+			cursor: pointer;
+			z-index: 9999px;
+		}
+		.addImg-btn:hover{
+			color: rgb(32, 160, 255);
+			border: 1px solid rgb(32, 160, 255);
+			cursor: pointer;
+			z-index: 9998px;
+		}	
+		.upload-input{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+		}
+		.upload-input:hover{
+			outline: none;
+		}
+		.add-btn{
+			float: left;
+			left:0;
+			display: inline-block;
+			line-height: 1;
+			white-space: nowrap;
+			background: #fff;
+			border: 1px solid #c0ccda;
+			color: #1f2d3d;
+			-webkit-appearance: none;
+			text-align: center;
+			box-sizing: border-box;
+			outline: none;
+			margin: 0;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			padding: 10px 15px;
+			font-size: 14px;
+			border-radius: 4px;
+			margin-bottom: 20px;
+			position: absolute;
+			cursor: pointer;
+			z-index: 9999px;
+		}
+		.add-btn:hover{
+			color: rgb(32, 160, 255);
+			border: 1px solid rgb(32, 160, 255);
+			cursor: pointer;
+			z-index: 9998px;
+		}
+	}
+	.img-a-banner{
+		img{
+			width: 60px;
+		}
+	}
+
+
+}

@@ -1,0 +1,19 @@
+.maps{
+	padding-bottom: 40px;
+	.right{
+		text-align: center;
+		margin: 0 auto;
+		.div{
+			margin: auto;
+			width: 80%;
+			text-align: left;
+		}
+	}
+	.qrcode{
+		text-align: center;
+		img{
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
