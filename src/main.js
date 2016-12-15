@@ -7,6 +7,8 @@ import store from './vuex/store';
 import App from './App.vue';
 import filters from './filter';
 import index from './views/index.vue';
+import input from './views/input.vue';
+import drag from './views/drag.vue';
 window.Vue = Vue;
 Vue.use(Router);
 const router = new Router({
@@ -33,9 +35,16 @@ router.map({
         name:'index',
         component:index,
         subRoutes:{
-            
-        }
+           '/input':{
+            name: 'input',
+            component: input
+        },
+        '/drag':{
+            name: 'drag',
+            component: drag
+        } 
     }
+}
 });
 
 // router.beforeEach(function(transition) {

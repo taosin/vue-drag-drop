@@ -34,6 +34,9 @@
     data(){
         return{
             menus:[
+                { name:'Input', url:'/index/input' },
+                { name:'Drag', url:'/index/drag' },
+
             ],
             current:''
         };
@@ -41,6 +44,9 @@
     attached(){
     },
     methods:{
+        goto(url){
+            window.router.go(url);
+        }
     }
 };
 </script>
